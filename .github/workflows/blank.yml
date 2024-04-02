@@ -46,11 +46,11 @@ jobs:
           name: KotlinBasic.apk
           path: app\build\outputs\apk\debug\app-debug.apk
 
-      - name: Upload Artifact to Firebase App Distribution
-        uses: wzieba/Firebase-Distribution-Github-Action@v1
+      - name: Firebase App Distribution Upload
+        uses: Mastersam07/firebase-app-distribution-action@v0.1
         with:
                   appId: ${{ secrets.FIREBASE_APP_ID }}
                   serviceCredentialsFileContent: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
-                  groups: testers
+                  groups: e-channel-internal-release
                   file: app/build/outputs/apk/debug/app-debug.apk
                   releaseNotes: ${{ inputs.release_notes }}
