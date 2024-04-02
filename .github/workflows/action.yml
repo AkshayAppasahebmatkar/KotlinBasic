@@ -11,7 +11,6 @@
     build:
       runs-on:
         - windows-latest
-
       steps:
         - name: Checkout
           uses: actions/checkout@v4.1.2
@@ -24,9 +23,6 @@
 
         - name: Build with Gradle
           uses: ./gradlew build
-
-        - name: Setup Java JDK
-          uses: actions/setup-java@v4.2.1
 
         - name: Upload a Build Artifact
           uses: actions/upload-artifact@v4.3.1
