@@ -30,5 +30,5 @@
           uses: actions/upload-artifact@v4.3.1
           with:
             name: KotlinBasic.apk
-            path: app\build\intermediates\apk\debug\app-debug.apk
+            path: C:\Users\Akshay\AndroidStudioProjects\KotlinBasic\app\build\intermediates\apk\debug\app-debug.apk
 
