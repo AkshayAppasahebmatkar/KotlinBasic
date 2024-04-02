@@ -1,4 +1,4 @@
-  name: AndroidBuild
+  name: action
   on:
     pull_request:
       branches:
