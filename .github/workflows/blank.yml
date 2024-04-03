@@ -24,7 +24,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -52,8 +52,8 @@ jobs:
          # name: KotlinBasic.apk
           #path: app\build\outputs\apk\debug\app-debug.apk
 
-      - name: Upload Artifact to Firebase App Distribution
-        uses: wzieba/Firebase-Distribution-Github-Action@v1
+      - name: Firebase App Distribution
+        uses: wzieba/Firebase-Distribution-Github-Action@v1.7.0
         with:
             appId: ${{ secrets.FIREBASE_APP_ID }}
             serviceCredentialsFileContent: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
