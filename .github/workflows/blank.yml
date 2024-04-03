@@ -57,6 +57,6 @@ jobs:
         with:
             appId: ${{ secrets.FIREBASE_APP_ID }}
             serviceCredentialsFileContent: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
-            groups: e-channel-internal-release
+            groups: wyntester
             file: app/build/outputs/apk/debug/app-debug.apk
             releaseNotes: ${{ inputs.release_notes }}
