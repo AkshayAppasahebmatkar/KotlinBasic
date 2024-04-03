@@ -46,6 +46,17 @@ jobs:
           name: KotlinBasic.apk
           path: app\build\outputs\apk\debug\app-debug.apk
 
+      - name: Distribute To Firebase App Distribution
+        # You may pin to the exact commit or the version.
+        # uses: nickwph/firebase-app-distribution-action@f21ab85c0d8420d13a6b94ddf3839fe2ab78c8ba
+        uses: nickwph/firebase-app-distribution-action@v1.2.1
+        with:
+          # The release binary file to upload.
+          file: app/build/outputs/apk/debug/app-debug.apk
+          # Your app's Firebase App ID. You can find the App ID in the Firebase console, on the General Settings page.
+          app: ${{ secrets.FIREBASE_APP_ID }}
+          groups: e-channel-internal-release
+
       - name: Firebase App Distribution Upload
         uses: Mastersam07/firebase-app-distribution-action@v0.1
         with:
