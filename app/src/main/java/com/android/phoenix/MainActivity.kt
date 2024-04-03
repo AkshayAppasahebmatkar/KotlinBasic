@@ -1,9 +1,8 @@
-package com.android.kotlinbasic
+package com.android.phoenix
 
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.widget.ListView
 import androidx.activity.ComponentActivity
+import com.icicilombard.phoenix.R
 
 public class MainActivity : ComponentActivity() {
 

@@ -13,7 +13,7 @@
         android:theme="@style/Theme.KotlinBasic"
         tools:targetApi="31" >
     <activity
-        android:name="com.android.kotlinbasic.MainActivity"
+        android:name="com.android.phoenix.MainActivity"
         android:exported="true"
         tools:ignore="WrongManifestParent">
         <intent-filter>
