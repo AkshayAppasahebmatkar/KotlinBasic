@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.android.kotlinbasic"
+    namespace = "com.icicilombard.phoenix"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.android.kotlinbasic"
+        applicationId = "com.icicilombard.phoenix"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
